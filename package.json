@@ -1,0 +1,31 @@
+{
+  "name": "elektron_basic_App",
+  "productName": "elektron_basic_App",
+  "description": "elektron basic App",
+  "version": "0.0.1",
+  "author": "Andreas Kosmehl (ak@a-d-k.de)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "keywords": [
+    "Electron",
+    "vr",
+    "sticht",	"3d"
+  ],
+  "homepage": "http://www.a-d-k.de",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  },
+  "build": {
+    "appId": "de.adk.eba",
+    "mac": {
+		"category": "public.app-category.utilities"
+    },
+    "win": {
+		"icon": "build/icon.ico"
+    }
+  }
+}
